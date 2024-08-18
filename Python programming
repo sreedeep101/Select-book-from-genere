@@ -1,0 +1,73 @@
+#listing the genere
+genere = ["fiction","non function","Novel","Children's literature","Fantasy Fiction"]
+#listing the name of books
+book_list1 = ["Aarachaar","Khasakkinte Ithihasam","Pathummayude Aadu","Aadujeevitham","Balyakaala saakhi"]
+book_list2 = ["Bharatheeya Samskrithi","Kerala Charithrathinte Athijeevam","Oru Deshathinte Katha","Sakhavu","Jeevithamalla"]
+book_list3 = ["Agni Sakshi","Yakshi","Viddikalude Swargam","Oru Sankeerthanam Pole","Meesha"]
+book_list4 = ["Ammachan","Kuttappan","Thampuran","Kavitha","Chithra"]
+book_list5 = ["Thalavattam","Kadhapura","Arohanam","Kunhikuttan","Pazhaya Sreekumarude Katha"]
+print("available genere's are ;")
+print(" ")
+#print the list in genere;
+for count in range (0,5,1):
+    print (f" {count+1} : {genere[count]}")
+#choosng any genere and books including it;    
+choose = int(input("**please enter the number of genere you wanted ; \n"))  
+if choose == 1 :
+    print("books available in this category are ;\n")
+    for book1 in range (0,5,1) :
+        print(f"{book1+1} : {book_list1[book1]}")
+    print(" ")    
+    choose1 =  int(input("**please enter the number of book you wanted ; \n"))  
+    if choose1<6 and choose1>0:
+        print(f"you selected the book '{book_list1[choose1-1]}'") 
+        print("THANK YOU...") 
+    else:
+        print("there is no such book in the library")
+elif choose == 2:
+    print("books available in this category are ;\n")
+    for book2 in range (0,5,1) :
+        print(f"{book2+1} : {book_list2[book2]}")
+    print(" ")    
+    choose2 =  int(input("**please enter the number of book you wanted ; \n"))  
+    if choose2<6 and choose2>0:
+        print(f"you selected the book '{book_list2[choose2-1]}'") 
+        print("THANK YOU.....") 
+    else:
+        print("there is no such book in the library")      
+elif choose == 3:
+    print("books available in this category are ;\n")
+    for book3 in range (0,5,1) :
+        print(f"{book3+1} : {book_list3[book3]}")
+    print(" ")    
+    choose3 =  int(input("**please enter the number of book you wanted ; \n"))  
+    if choose3<6 and choose3>0:
+        print(f"you selected the book '{book_list3[choose3-1]}'") 
+        print("THANK YOU.....") 
+    else:
+        print("there is no such book in the library")      
+elif choose == 4:
+    print("books available in this category are ;\n")
+    for book4 in range (0,5,1) :
+        print(f"{book4+1} : {book_list4[book4]}")
+    print(" ")    
+    choose4 =  int(input("**please enter the number of book you wanted ; \n"))  
+    if choose4<6 and choose4>0:
+        print(f"you selected the book '{book_list4[choose4-1]}'") 
+        print("THANK YOU.....") 
+    else:
+        print("there is no such book in the library")  
+elif choose == 5:
+    print("books available in this category are ;\n")
+    for book5 in range (0,5,1) :
+        print(f"{book5+1} : {book_list5[book5]}")
+    print(" ")    
+    choose5 =  int(input("**please enter the number of book you wanted ; \n"))  
+    if choose5<6 and choose5>0:
+        print(f"you selected the book '{book_list5[choose5-1]}'") 
+        print("THANK YOU.....") 
+    else:
+        print("there is no such book in the library")      
+else:
+    print("there is no such genere in the library")                    
+                
